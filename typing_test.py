@@ -57,6 +57,7 @@ class main():
             digit_check = test_time.isdigit()
             if digit_check == True:
                 print("Starting test...\n\n")
+                time.sleep(0.5)
                 break
             else:
                 print("Invalid input. Try again and enter an integer value.")
@@ -93,7 +94,6 @@ class main():
 
     def word_test():
 
-        start = time.time()
 
         chars_typed = 0
         
@@ -105,9 +105,12 @@ class main():
             digit_check = count.isdigit()
             if digit_check == True:
                 print("Starting test...\n\n")
+                time.sleep(0.5)
                 break
             else:
                 print("Invalid input. Try again and enter an integer value.")
+
+        start = time.time()
 
         count = int(count)
 
@@ -133,12 +136,13 @@ class main():
 
     def practice():
 
-        start = time.time()
         chars_typed = 0
         print("Starting typing practice...")
-        time.sleep(1)
+        time.sleep(0.5)
         print("Type exit anytime to leave")
-        time.sleep(1)
+        time.sleep(0.5)
+        start = time.time()
+
         while True:
             displayed_word = main.wordprinter()
             print(displayed_word)
@@ -165,12 +169,16 @@ class main():
         end = time.time()
         total_time = round(end - start, 2)
         print("\nWell done!")
+        time.sleep(0.5)
         print("\nTotal time taken: " + str(total_time))
         WPM = round(chars_typed*12/total_time, 2)
         if WPM < 0:
             WPM = 0
+        time.sleep(0.5)
         print("WPM: " + str(WPM))
-        print()   
+        time.sleep(2)
+        print()  
+         
 
 
 

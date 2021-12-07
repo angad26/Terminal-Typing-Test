@@ -18,7 +18,7 @@ pip3 install english_words
 Download the python script by running the following code
 
 ```
-wget https://raw.githubusercontent.com/angad26/Terminal-Typing-Test/main/README.md
+wget https://raw.githubusercontent.com/angad26/Terminal-Typing-Test/main/typing_test.py
 ```
 
 ## Running

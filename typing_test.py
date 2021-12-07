@@ -1,6 +1,9 @@
 from english_words import english_words_lower_alpha_set as words
 import random
 import time
+import os
+
+os.system('cls' if os.name == 'nt' else 'clear')
 
 
 class main():
@@ -20,11 +23,11 @@ class main():
 
             print("Please select the mode you would like to choose:\n")
             print('''
-            1. Time test
-            2. Word test
-            3. Strict time test
-            4. Strict word test
-            5. Unlimited practice
+            1. Time based test
+            2. Word based test
+            3. Strict time based test
+            4. Strict word based test
+            5. Infinite practice
             ''')
             mode = input("Enter choice (1,2,3,4 or 5): ")
             if mode == "1":
